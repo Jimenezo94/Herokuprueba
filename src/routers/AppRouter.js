@@ -4,7 +4,7 @@ import {BrowserRouter as Router,
     Route,
     Navigate} 
     from 'react-router-dom';
-//import { Form } from '../components/Form';
+import { Form } from '../components/Form';
 import  Lista  from '../components/Lista';
 import { Navbar } from '../components/Navbar';
 
@@ -15,7 +15,7 @@ import { Navbar } from '../components/Navbar';
           <Navbar/> 
                 <Routes>
                     <Route path="/" element={<Lista/>}/>
-                   {/* <Route path="/form" element={<Form/>}/>*/}
+                    <Route path="/form" element={<Form/>}/>
                     <Route path="/*" element={<Navigate to="/"/>}/>
                 </Routes>
             </Router>
